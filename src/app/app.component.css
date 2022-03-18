@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Merriweather:wght@300&family=Raleway:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500;1,600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-image: url(https://images.pexels.com/photos/6787970/pexels-photo-6787970.jpeg?cs=srgb&dl=pexels-marcus-aurelius-6787970.jpg&fm=jpg);
+    background-color: #0153a0c5;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding: 10rem;
+    margin-top: 10rem;
+
+}
+
+.logo {
+    margin-top: 0;
+    max-width: 5%;
+    min-width: 5%;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.primary-title {
+    font-family: 'Merriweather', serif;
+}
+
+.main {
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-accent, #ffffff);
+    background: var(--clr-accent, #0a3c53);
+    font-style: italic;
+    font-weight: 500;
+    font-size: .9rem;
+    padding: 0.1em 0.5em;
+    border-radius: 0.25em;
+    transition: transform 250ms ease-in-out, opacity 175ms linear;
+    margin-top: 2em;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.03);
+    background: #2f596d;
+}
+
+.footer-container {
+    background-color: #f7f7f7;
+    padding-bottom: 4rem;
+}
+
+.footer {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: .9rem;
+    cursor: default;
+    padding: 5rem;
+    /*border: solid rgb(255, 20, 20) 4px;*/
+    margin-bottom: 5rem;
+}
+
+.second-footer {
+    width: auto;
+    height: auto;
+    background-color: #F5F5F5;
+    color: #212329;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: .9rem;
+    /*border: solid blue 4px;*/
+
+}
+
+.line {
+    border-left: 1px solid #CDCDCD;
+    padding-left: 2rem;
+    
+}
+.footer-heading {
+    display: flex;
+    flex-direction: column; /* makes it 3 columns */ 
+    margin-right: 4rem; /*Separation between columns*/
+}
+
+.footer-heading h1 {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    color: black;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.footer-heading a {
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Hover effect */
+.footer-heading a:hover {
+    color: #0079c2;
+    transition: 0.3s ease-out;
+}
+
+/*
+.footer-email-form {
+    *border: solid 2px black;
+}
+*/
+.footer-email-form h1 {
+    font-size: .9rem;
+    color: black;
+}
+
+.footer-email-form p {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#footer-email {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: #CDCDCD solid 1px;
+    padding-left: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+#footer-email-btn {
+    width: 100px;
+    height: 44px;
+    /* background-color: #0a3c53; */
+    background: #0a3c53 url(/timeout/src/assets/img/signup.png) no-repeat;
+    outline: none;
+    border: none;
+    color: #CDCDCD;
+    font-size: .9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#footer-email-btn:hover {
+    cursor: pointer;
+    background: #2f596d url(/timeout/src/assets/img/signup.png) no-repeat;
+    transition: all 0.4s ease-out;
+}
+
+.bottom-text {
+    padding-top: 2rem;
+    color: #666;
+    /* border-top: 1px solid #666;*/
+}
+@media screen and (max-width: 1150px) {
+    .footer {
+        height: 50vh;
+    }
+
+    .footer-email-form {
+        margin-top: 4rem;
+
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .footer {
+        padding-top: 2rem;
+    }
+
+}
